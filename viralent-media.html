@@ -1,0 +1,1695 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Viralent Media — Creator Partnerships. Meme Marketing. Viral Reach.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #080A0E;
+    --bg2: #0D1018;
+    --bg3: #131720;
+    --surface: #181D29;
+    --border: rgba(255,255,255,0.07);
+    --border2: rgba(255,255,255,0.12);
+    --accent: #C8F135;
+    --accent2: #A8D920;
+    --accent-dim: rgba(200,241,53,0.12);
+    --accent-glow: rgba(200,241,53,0.25);
+    --white: #F4F6FA;
+    --muted: rgba(244,246,250,0.45);
+    --muted2: rgba(244,246,250,0.25);
+    --text: #E8ECF4;
+    --heading: #F4F6FA;
+    --font-display: 'Syne', sans-serif;
+    --font-body: 'DM Sans', sans-serif;
+    --r: 14px;
+    --r2: 20px;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.65;
+    overflow-x: hidden;
+  }
+
+  /* ── NAV ── */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 18px 48px;
+    background: rgba(8,10,14,0.8);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border);
+  }
+  .nav-logo {
+    font-family: var(--font-display);
+    font-size: 22px; font-weight: 800;
+    color: var(--white); letter-spacing: -0.5px;
+  }
+  .nav-logo span { color: var(--accent); }
+  .nav-links { display: flex; gap: 36px; list-style: none; }
+  .nav-links a {
+    font-size: 13.5px; font-weight: 500; letter-spacing: 0.02em;
+    color: var(--muted); text-decoration: none;
+    transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--white); }
+  .nav-cta {
+    background: var(--accent); color: #080A0E;
+    font-family: var(--font-display); font-size: 13px; font-weight: 700;
+    padding: 10px 22px; border-radius: 8px; text-decoration: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .nav-cta:hover { transform: translateY(-1px); box-shadow: 0 6px 20px var(--accent-glow); }
+
+  /* ── SECTIONS ── */
+  section { padding: 100px 48px; }
+  .container { max-width: 1160px; margin: 0 auto; }
+
+  .tag {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-size: 11.5px; font-weight: 600; letter-spacing: 0.12em;
+    text-transform: uppercase; color: var(--accent);
+    background: var(--accent-dim); border: 1px solid rgba(200,241,53,0.2);
+    padding: 6px 14px; border-radius: 100px; margin-bottom: 24px;
+  }
+  .tag::before { content: '●'; font-size: 8px; }
+
+  h1, h2, h3, h4 { font-family: var(--font-display); color: var(--heading); }
+  h1 { font-size: clamp(44px, 7vw, 84px); line-height: 1.02; letter-spacing: -2.5px; font-weight: 800; }
+  h2 { font-size: clamp(32px, 4.5vw, 52px); line-height: 1.1; letter-spacing: -1.5px; font-weight: 800; }
+  h3 { font-size: 22px; letter-spacing: -0.5px; font-weight: 700; }
+  h4 { font-size: 15px; letter-spacing: 0; font-weight: 600; }
+
+  p.lead {
+    font-size: 18px; color: var(--muted); line-height: 1.7;
+    max-width: 580px; margin-top: 16px;
+  }
+
+  .btn {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-family: var(--font-display); font-weight: 700; font-size: 14px;
+    padding: 14px 28px; border-radius: 10px; text-decoration: none;
+    transition: all 0.2s; cursor: pointer; border: none;
+  }
+  .btn-primary { background: var(--accent); color: #080A0E; }
+  .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 28px var(--accent-glow); }
+  .btn-outline {
+    background: transparent; color: var(--white);
+    border: 1.5px solid var(--border2);
+  }
+  .btn-outline:hover { border-color: rgba(255,255,255,0.35); background: rgba(255,255,255,0.04); }
+
+  /* ── HERO ── */
+  #hero {
+    min-height: 100vh;
+    display: flex; align-items: center;
+    padding: 140px 48px 80px;
+    position: relative; overflow: hidden;
+  }
+  .hero-bg {
+    position: absolute; inset: 0;
+    background:
+      radial-gradient(ellipse 700px 500px at 60% 30%, rgba(200,241,53,0.06) 0%, transparent 70%),
+      radial-gradient(ellipse 400px 300px at 85% 70%, rgba(200,241,53,0.04) 0%, transparent 60%);
+    pointer-events: none;
+  }
+  .hero-grid {
+    position: absolute; inset: 0; opacity: 0.03;
+    background-image: linear-gradient(var(--border2) 1px, transparent 1px),
+      linear-gradient(90deg, var(--border2) 1px, transparent 1px);
+    background-size: 60px 60px;
+  }
+  .hero-inner {
+    position: relative; z-index: 1;
+    display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;
+    max-width: 1160px; margin: 0 auto; width: 100%;
+  }
+  .hero-left {}
+  .hero-badge {
+    display: inline-flex; align-items: center; gap: 10px;
+    background: var(--surface); border: 1px solid var(--border2);
+    border-radius: 100px; padding: 8px 16px; margin-bottom: 28px;
+  }
+  .badge-dot { width: 8px; height: 8px; background: var(--accent); border-radius: 50%; animation: pulse 2s infinite; }
+  @keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.6;transform:scale(1.3)} }
+  .hero-badge span { font-size: 12.5px; font-weight: 500; color: var(--muted); }
+  .hero-title { margin-bottom: 24px; }
+  .hero-title .accent { color: var(--accent); }
+  .hero-sub {
+    font-size: 17px; color: var(--muted); line-height: 1.7;
+    max-width: 500px; margin-bottom: 40px;
+  }
+  .hero-ctas { display: flex; gap: 14px; flex-wrap: wrap; }
+  .hero-stats {
+    display: flex; gap: 32px; margin-top: 52px;
+    padding-top: 36px; border-top: 1px solid var(--border);
+  }
+  .stat-item {}
+  .stat-num {
+    font-family: var(--font-display); font-size: 30px; font-weight: 800;
+    color: var(--white); letter-spacing: -1px;
+  }
+  .stat-num span { color: var(--accent); }
+  .stat-label { font-size: 12px; color: var(--muted2); margin-top: 2px; letter-spacing: 0.02em; }
+
+  .hero-right { display: flex; flex-direction: column; gap: 16px; }
+  .hero-card {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: var(--r2); padding: 24px;
+    position: relative; overflow: hidden;
+    transition: border-color 0.3s, transform 0.3s;
+  }
+  .hero-card:hover { border-color: var(--border2); transform: translateY(-3px); }
+  .hero-card-accent { border-color: rgba(200,241,53,0.25); }
+  .hcard-label {
+    font-size: 11px; font-weight: 600; letter-spacing: 0.1em;
+    text-transform: uppercase; color: var(--muted2); margin-bottom: 8px;
+  }
+  .hcard-val {
+    font-family: var(--font-display); font-size: 28px; font-weight: 800;
+    color: var(--white); letter-spacing: -1px;
+  }
+  .hcard-sub { font-size: 13px; color: var(--muted); margin-top: 4px; }
+  .hcard-bar {
+    margin-top: 16px; height: 4px; background: var(--border);
+    border-radius: 100px; overflow: hidden;
+  }
+  .hcard-fill { height: 100%; background: var(--accent); border-radius: 100px; transition: width 1.5s ease; }
+  .hcard-row { display: flex; gap: 12px; }
+  .hcard-half {
+    flex: 1; background: var(--bg3); border-radius: 10px;
+    padding: 14px; border: 1px solid var(--border);
+  }
+  .hcard-half .hcard-val { font-size: 20px; }
+
+  /* ── TICKER ── */
+  .ticker-wrap {
+    overflow: hidden; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);
+    background: var(--bg2); padding: 14px 0;
+  }
+  .ticker-track {
+    display: flex; gap: 0; animation: ticker 25s linear infinite; width: max-content;
+  }
+  @keyframes ticker { from{transform:translateX(0)} to{transform:translateX(-50%)} }
+  .ticker-item {
+    display: flex; align-items: center; gap: 12px; padding: 0 36px;
+    font-size: 13px; font-weight: 500; color: var(--muted); white-space: nowrap;
+  }
+  .ticker-dot { width: 5px; height: 5px; background: var(--accent); border-radius: 50%; }
+
+  /* ── ABOUT ── */
+  #about { background: var(--bg2); }
+  .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+  .about-left {}
+  .about-list { list-style: none; margin-top: 36px; display: flex; flex-direction: column; gap: 16px; }
+  .about-list li {
+    display: flex; align-items: flex-start; gap: 14px;
+    padding: 18px 20px; border-radius: var(--r);
+    background: var(--bg3); border: 1px solid var(--border);
+    font-size: 14.5px; color: var(--muted);
+  }
+  .about-list li strong { color: var(--white); display: block; font-size: 14px; margin-bottom: 3px; }
+  .about-icon {
+    width: 38px; height: 38px; border-radius: 10px;
+    background: var(--accent-dim); border: 1px solid rgba(200,241,53,0.2);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 18px; flex-shrink: 0;
+  }
+  .about-right {}
+  .about-visual {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: var(--r2); padding: 36px; position: relative; overflow: hidden;
+  }
+  .about-visual::before {
+    content: ''; position: absolute; top: -60px; right: -60px;
+    width: 200px; height: 200px;
+    background: radial-gradient(circle, var(--accent-glow), transparent 70%);
+  }
+  .av-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted2); margin-bottom: 24px; }
+  .av-metric { margin-bottom: 24px; }
+  .av-metric-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+  .av-metric-name { font-size: 13.5px; font-weight: 500; color: var(--text); }
+  .av-metric-pct { font-size: 13px; font-weight: 700; color: var(--accent); }
+  .av-bar { height: 6px; background: var(--border); border-radius: 100px; overflow: hidden; }
+  .av-fill { height: 100%; background: linear-gradient(90deg, var(--accent2), var(--accent)); border-radius: 100px; }
+  .av-chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 28px; }
+  .av-chip {
+    font-size: 12px; font-weight: 500; padding: 6px 14px;
+    border-radius: 100px; background: var(--bg3); border: 1px solid var(--border);
+    color: var(--muted);
+  }
+
+  /* ── SERVICES ── */
+  #services { background: var(--bg); }
+  .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 56px; }
+  .svc-card {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: var(--r2); padding: 28px;
+    transition: border-color 0.3s, transform 0.3s;
+    display: flex; flex-direction: column; gap: 16px;
+  }
+  .svc-card:hover { border-color: rgba(200,241,53,0.3); transform: translateY(-4px); }
+  .svc-icon {
+    width: 48px; height: 48px; border-radius: 12px;
+    background: var(--accent-dim); border: 1px solid rgba(200,241,53,0.2);
+    display: flex; align-items: center; justify-content: center; font-size: 22px;
+  }
+  .svc-card h3 { font-size: 17px; }
+  .svc-card p { font-size: 13.5px; color: var(--muted); line-height: 1.6; }
+  .svc-deliverables { display: flex; flex-wrap: wrap; gap: 6px; }
+  .svc-tag {
+    font-size: 11px; font-weight: 500; padding: 4px 10px;
+    border-radius: 100px; background: var(--bg3);
+    border: 1px solid var(--border); color: var(--muted2);
+  }
+  .svc-for {
+    font-size: 12px; color: var(--muted2); margin-top: auto;
+    padding-top: 14px; border-top: 1px solid var(--border);
+  }
+  .svc-for strong { color: var(--accent); }
+
+  /* ── HOW WE WORK ── */
+  #process { background: var(--bg2); }
+  .process-steps { margin-top: 56px; display: flex; flex-direction: column; gap: 0; }
+  .process-step {
+    display: grid; grid-template-columns: 80px 1fr; gap: 32px;
+    align-items: flex-start; padding: 36px 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .process-step:last-child { border-bottom: none; }
+  .step-num {
+    font-family: var(--font-display); font-size: 48px; font-weight: 800;
+    color: var(--accent); line-height: 1; letter-spacing: -2px;
+    opacity: 0.7;
+  }
+  .step-body h3 { margin-bottom: 8px; }
+  .step-body p { font-size: 14.5px; color: var(--muted); max-width: 600px; }
+  .step-chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+  .step-chip {
+    font-size: 12px; padding: 5px 12px;
+    background: var(--bg3); border: 1px solid var(--border);
+    border-radius: 100px; color: var(--muted2);
+  }
+
+  /* ── CAMPAIGNS ── */
+  #campaigns { background: var(--bg); }
+  .campaigns-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 56px; }
+  .camp-card {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: var(--r2); overflow: hidden;
+    transition: transform 0.3s, border-color 0.3s;
+  }
+  .camp-card:hover { transform: translateY(-4px); border-color: var(--border2); }
+  .camp-header { padding: 24px 28px 0; }
+  .camp-brand-row { display: flex; align-items: center; gap: 14px; margin-bottom: 16px; }
+  .camp-logo {
+    width: 42px; height: 42px; border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 18px; font-weight: 800; font-family: var(--font-display);
+    color: #080A0E; flex-shrink: 0;
+  }
+  .camp-brand-info {}
+  .camp-brand-name { font-family: var(--font-display); font-size: 16px; font-weight: 700; color: var(--white); }
+  .camp-type { font-size: 11.5px; color: var(--muted2); }
+  .camp-obj { font-size: 13.5px; color: var(--muted); margin-bottom: 20px; }
+  .camp-metrics {
+    display: grid; grid-template-columns: repeat(3, 1fr);
+    border-top: 1px solid var(--border);
+    background: var(--bg3);
+  }
+  .camp-metric { padding: 16px; border-right: 1px solid var(--border); }
+  .camp-metric:last-child { border-right: none; }
+  .cm-val { font-family: var(--font-display); font-size: 20px; font-weight: 800; color: var(--white); letter-spacing: -0.5px; }
+  .cm-val span { color: var(--accent); }
+  .cm-label { font-size: 11px; color: var(--muted2); margin-top: 2px; }
+  .camp-footer { padding: 16px 28px; border-top: 1px solid var(--border); }
+  .camp-outcome { font-size: 13px; color: var(--muted); }
+  .camp-outcome strong { color: var(--accent); }
+  .camp-creators { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+  .camp-ctag { font-size: 11px; padding: 3px 10px; border-radius: 100px; background: var(--accent-dim); border: 1px solid rgba(200,241,53,0.15); color: var(--accent); }
+
+  /* ── NETWORK ── */
+  #network { background: var(--bg2); }
+  .network-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-top: 56px; }
+  .net-card {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: var(--r2); padding: 32px;
+    position: relative; overflow: hidden;
+    transition: transform 0.3s;
+  }
+  .net-card:hover { transform: translateY(-3px); }
+  .net-card.featured { grid-column: span 2; display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
+  .net-emoji { font-size: 36px; margin-bottom: 16px; }
+  .net-card h3 { margin-bottom: 8px; }
+  .net-card p { font-size: 14px; color: var(--muted); margin-bottom: 20px; }
+  .net-stats { display: flex; gap: 24px; }
+  .nstat-val { font-family: var(--font-display); font-size: 24px; font-weight: 800; color: var(--accent); letter-spacing: -1px; }
+  .nstat-label { font-size: 11px; color: var(--muted2); }
+
+  /* ── CASE STUDIES ── */
+  #cases { background: var(--bg); }
+  .cases-grid { display: flex; flex-direction: column; gap: 32px; margin-top: 56px; }
+  .case-card {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: var(--r2); overflow: hidden;
+    display: grid; grid-template-columns: 1fr 2fr;
+    transition: border-color 0.3s;
+  }
+  .case-card:hover { border-color: rgba(200,241,53,0.2); }
+  .case-left {
+    padding: 36px; background: var(--bg3); border-right: 1px solid var(--border);
+    display: flex; flex-direction: column; justify-content: space-between;
+  }
+  .case-num {
+    font-family: var(--font-display); font-size: 60px; font-weight: 800;
+    color: var(--accent); opacity: 0.3; letter-spacing: -3px; line-height: 1;
+  }
+  .case-brand {
+    font-family: var(--font-display); font-size: 20px; font-weight: 800; color: var(--white);
+    margin-top: auto;
+  }
+  .case-niche { font-size: 12px; color: var(--muted2); margin-top: 4px; }
+  .case-right { padding: 36px; }
+  .case-cols { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-bottom: 28px; }
+  .case-col-label { font-size: 10.5px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted2); margin-bottom: 10px; }
+  .case-col p { font-size: 13.5px; color: var(--muted); line-height: 1.6; }
+  .case-results { display: flex; gap: 20px; flex-wrap: wrap; }
+  .cresult {
+    background: var(--bg3); border: 1px solid var(--border);
+    border-radius: 10px; padding: 14px 18px; min-width: 110px;
+  }
+  .cresult-val { font-family: var(--font-display); font-size: 22px; font-weight: 800; color: var(--accent); letter-spacing: -0.5px; }
+  .cresult-label { font-size: 11px; color: var(--muted2); margin-top: 2px; }
+
+  /* ── PORTFOLIO ── */
+  #portfolio { background: var(--bg2); }
+  .port-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 56px; }
+  .port-item {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: var(--r2); overflow: hidden;
+    transition: transform 0.3s, border-color 0.3s;
+  }
+  .port-item:hover { transform: translateY(-4px); border-color: var(--border2); }
+  .port-thumb {
+    height: 180px; position: relative; overflow: hidden;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .port-thumb-bg { position: absolute; inset: 0; }
+  .port-thumb-content { position: relative; z-index: 1; text-align: center; }
+  .port-thumb-icon { font-size: 40px; display: block; margin-bottom: 8px; }
+  .port-thumb-title { font-family: var(--font-display); font-size: 14px; font-weight: 700; color: var(--white); }
+  .port-meta { padding: 18px; }
+  .port-meta h4 { margin-bottom: 4px; }
+  .port-meta p { font-size: 13px; color: var(--muted); }
+  .port-tag-row { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 12px; }
+  .port-tag { font-size: 11px; padding: 4px 10px; border-radius: 100px; background: var(--bg3); border: 1px solid var(--border); color: var(--muted2); }
+
+  /* ── TESTIMONIALS ── */
+  #testimonials { background: var(--bg); }
+  .testi-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 56px; }
+  .testi-card {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: var(--r2); padding: 28px;
+    transition: transform 0.3s;
+  }
+  .testi-card:hover { transform: translateY(-3px); }
+  .testi-stars { color: var(--accent); font-size: 14px; margin-bottom: 16px; }
+  .testi-quote { font-size: 14.5px; color: var(--muted); line-height: 1.7; font-style: italic; margin-bottom: 24px; }
+  .testi-author { display: flex; align-items: center; gap: 12px; }
+  .testi-avatar {
+    width: 42px; height: 42px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 16px; font-weight: 800; font-family: var(--font-display);
+    color: #080A0E; flex-shrink: 0;
+  }
+  .testi-name { font-size: 14px; font-weight: 600; color: var(--white); }
+  .testi-role { font-size: 12px; color: var(--muted2); }
+
+  /* ── PRICING ── */
+  #pricing { background: var(--bg2); }
+  .pricing-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 56px; }
+  .price-card {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: var(--r2); padding: 36px;
+    transition: transform 0.3s;
+    display: flex; flex-direction: column;
+  }
+  .price-card.featured {
+    border-color: rgba(200,241,53,0.35);
+    background: linear-gradient(135deg, var(--surface) 0%, rgba(200,241,53,0.04) 100%);
+    transform: scale(1.02);
+  }
+  .price-card:hover { transform: translateY(-4px); }
+  .price-card.featured:hover { transform: scale(1.02) translateY(-4px); }
+  .price-tag-label {
+    font-size: 11px; font-weight: 700; letter-spacing: 0.1em;
+    text-transform: uppercase; color: var(--muted2); margin-bottom: 20px;
+  }
+  .price-tag-label.featured-label { color: var(--accent); }
+  .price-badge {
+    display: inline-block; font-size: 10.5px; font-weight: 700;
+    background: var(--accent); color: #080A0E; padding: 4px 10px;
+    border-radius: 100px; margin-left: 10px;
+  }
+  .price-name { font-family: var(--font-display); font-size: 22px; font-weight: 800; color: var(--white); margin-bottom: 8px; }
+  .price-amount { font-family: var(--font-display); font-size: 38px; font-weight: 800; color: var(--white); letter-spacing: -1.5px; margin: 16px 0; }
+  .price-amount span { font-size: 18px; color: var(--muted2); font-weight: 400; }
+  .price-desc { font-size: 13.5px; color: var(--muted); margin-bottom: 28px; }
+  .price-features { list-style: none; display: flex; flex-direction: column; gap: 12px; margin-bottom: 32px; flex: 1; }
+  .price-features li { font-size: 13.5px; color: var(--muted); display: flex; align-items: flex-start; gap: 10px; }
+  .price-features li::before { content: '✓'; color: var(--accent); font-weight: 700; flex-shrink: 0; }
+  .price-cta {
+    display: block; text-align: center; padding: 14px;
+    border-radius: 10px; font-family: var(--font-display); font-weight: 700; font-size: 14px;
+    text-decoration: none; transition: all 0.2s;
+  }
+  .price-cta-outline {
+    background: transparent; color: var(--white);
+    border: 1.5px solid var(--border2);
+  }
+  .price-cta-outline:hover { border-color: rgba(255,255,255,0.3); background: rgba(255,255,255,0.04); }
+  .price-cta-solid { background: var(--accent); color: #080A0E; }
+  .price-cta-solid:hover { box-shadow: 0 8px 28px var(--accent-glow); }
+
+  /* ── FAQ ── */
+  #faq { background: var(--bg); }
+  .faq-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 56px; }
+  .faq-item {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: var(--r); padding: 24px;
+  }
+  .faq-q { font-family: var(--font-display); font-size: 15px; font-weight: 700; color: var(--white); margin-bottom: 10px; }
+  .faq-a { font-size: 13.5px; color: var(--muted); line-height: 1.7; }
+
+  /* ── CONTACT ── */
+  #contact {
+    background: var(--bg2);
+    position: relative; overflow: hidden;
+  }
+  #contact::before {
+    content: ''; position: absolute; top: -100px; right: -100px;
+    width: 400px; height: 400px;
+    background: radial-gradient(circle, rgba(200,241,53,0.08), transparent 70%);
+  }
+  .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
+  .contact-left {}
+  .contact-methods { display: flex; flex-direction: column; gap: 16px; margin-top: 36px; }
+  .contact-method {
+    display: flex; align-items: center; gap: 16px;
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: var(--r); padding: 18px 22px;
+    text-decoration: none; transition: border-color 0.2s, transform 0.2s;
+  }
+  .contact-method:hover { border-color: rgba(200,241,53,0.3); transform: translateX(4px); }
+  .cmethod-icon { font-size: 24px; }
+  .cmethod-label { font-size: 11px; color: var(--muted2); text-transform: uppercase; letter-spacing: 0.08em; }
+  .cmethod-val { font-size: 15px; font-weight: 600; color: var(--white); margin-top: 2px; }
+  .contact-right {}
+  .contact-form { display: flex; flex-direction: column; gap: 16px; }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .form-field { display: flex; flex-direction: column; gap: 7px; }
+  .form-field label { font-size: 12.5px; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; }
+  .form-field input, .form-field select, .form-field textarea {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 10px; padding: 12px 16px;
+    font-family: var(--font-body); font-size: 14px; color: var(--white);
+    outline: none; transition: border-color 0.2s;
+    width: 100%;
+  }
+  .form-field input:focus, .form-field select:focus, .form-field textarea:focus {
+    border-color: rgba(200,241,53,0.4);
+  }
+  .form-field textarea { resize: vertical; min-height: 110px; }
+  .form-field select option { background: var(--bg3); }
+  .form-submit {
+    background: var(--accent); color: #080A0E;
+    font-family: var(--font-display); font-size: 15px; font-weight: 800;
+    padding: 15px 32px; border-radius: 10px; border: none; cursor: pointer;
+    width: 100%; transition: box-shadow 0.2s, transform 0.2s;
+  }
+  .form-submit:hover { box-shadow: 0 8px 28px var(--accent-glow); transform: translateY(-1px); }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--bg); border-top: 1px solid var(--border);
+    padding: 60px 48px 32px;
+  }
+  .footer-inner { max-width: 1160px; margin: 0 auto; }
+  .footer-top { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px; margin-bottom: 52px; }
+  .footer-brand {}
+  .footer-logo {
+    font-family: var(--font-display); font-size: 22px; font-weight: 800;
+    color: var(--white); margin-bottom: 14px;
+  }
+  .footer-logo span { color: var(--accent); }
+  .footer-tagline { font-size: 13.5px; color: var(--muted); margin-bottom: 24px; max-width: 260px; }
+  .footer-socials { display: flex; gap: 10px; }
+  .social-btn {
+    width: 38px; height: 38px; border-radius: 10px;
+    background: var(--surface); border: 1px solid var(--border);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 16px; text-decoration: none;
+    transition: border-color 0.2s, transform 0.2s;
+  }
+  .social-btn:hover { border-color: rgba(200,241,53,0.4); transform: translateY(-2px); }
+  .footer-col {}
+  .footer-col-title { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted2); margin-bottom: 18px; }
+  .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+  .footer-col ul a { font-size: 13.5px; color: var(--muted); text-decoration: none; transition: color 0.2s; }
+  .footer-col ul a:hover { color: var(--white); }
+  .footer-bottom {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 28px; border-top: 1px solid var(--border);
+    font-size: 12.5px; color: var(--muted2);
+  }
+
+  /* ── UTILITIES ── */
+  .section-head { text-align: center; margin-bottom: 8px; }
+  .section-head h2 { margin-top: 12px; }
+  .section-head p.lead { margin: 16px auto 0; text-align: center; }
+
+  .mt-0 { margin-top: 0; }
+  .accent-text { color: var(--accent); }
+
+  /* Scroll reveal */
+  .reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.6s ease, transform 0.6s ease; }
+  .reveal.visible { opacity: 1; transform: none; }
+
+  @media (max-width: 900px) {
+    nav { padding: 16px 24px; }
+    .nav-links { display: none; }
+    section { padding: 80px 24px; }
+    .hero-inner { grid-template-columns: 1fr; }
+    .hero-right { display: none; }
+    .about-grid, .contact-grid { grid-template-columns: 1fr; }
+    .services-grid { grid-template-columns: 1fr 1fr; }
+    .campaigns-grid, .faq-grid { grid-template-columns: 1fr; }
+    .case-card { grid-template-columns: 1fr; }
+    .case-left { border-right: none; border-bottom: 1px solid var(--border); }
+    .port-grid { grid-template-columns: 1fr 1fr; }
+    .testi-grid { grid-template-columns: 1fr; }
+    .pricing-grid { grid-template-columns: 1fr; }
+    .price-card.featured { transform: none; }
+    .footer-top { grid-template-columns: 1fr 1fr; }
+    .network-grid { grid-template-columns: 1fr; }
+    .net-card.featured { grid-column: span 1; grid-template-columns: 1fr; }
+    h1 { font-size: clamp(38px, 9vw, 56px); }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">Viralent<span>.</span></div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#campaigns">Work</a></li>
+    <li><a href="#cases">Case Studies</a></li>
+    <li><a href="#pricing">Pricing</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="https://wa.me/918920277947" class="nav-cta" target="_blank">WhatsApp Us →</a>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-inner">
+    <div class="hero-left reveal">
+      <div class="hero-badge">
+        <div class="badge-dot"></div>
+        <span>Now onboarding new brand partners</span>
+      </div>
+      <h1 class="hero-title">
+        Scaling Brands<br>Through <span class="accent">Creators</span><br>&amp; Culture.
+      </h1>
+      <p class="hero-sub">Viralent Media is a creator-first influencer marketing and talent management agency helping brands grow through authentic campaigns, meme marketing, and strategic creator partnerships.</p>
+      <div class="hero-ctas">
+        <a href="#contact" class="btn btn-primary">Get a Free Strategy Call →</a>
+        <a href="#campaigns" class="btn btn-outline">View Our Work</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <div class="stat-num">50<span>+</span></div>
+          <div class="stat-label">Campaigns Executed</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">200<span>+</span></div>
+          <div class="stat-label">Creator Partners</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">15<span>M+</span></div>
+          <div class="stat-label">Audience Reached</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-right reveal">
+      <div class="hero-card hero-card-accent">
+        <div class="hcard-label">Active Campaign Performance</div>
+        <div class="hcard-val">4.2M</div>
+        <div class="hcard-sub">Total impressions this month</div>
+        <div class="hcard-bar"><div class="hcard-fill" style="width:78%"></div></div>
+      </div>
+      <div class="hcard-row">
+        <div class="hero-card" style="flex:1">
+          <div class="hcard-label">Avg. Engagement</div>
+          <div class="hcard-val">6.8%</div>
+          <div class="hcard-sub">Above industry avg.</div>
+        </div>
+        <div class="hero-card" style="flex:1">
+          <div class="hcard-label">Creator Network</div>
+          <div class="hcard-val">200+</div>
+          <div class="hcard-sub">Active creators</div>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="hcard-label">Campaign Fulfillment Rate</div>
+        <div class="hcard-val">97%</div>
+        <div class="hcard-sub">On-time delivery across all campaigns</div>
+        <div class="hcard-bar"><div class="hcard-fill" style="width:97%"></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker-wrap">
+  <div class="ticker-track">
+    <div class="ticker-item"><span class="ticker-dot"></span>Influencer Campaigns</div>
+    <div class="ticker-item"><span class="ticker-dot"></span>Meme Marketing</div>
+    <div class="ticker-item"><span class="ticker-dot"></span>UGC Creator Sourcing</div>
+    <div class="ticker-item"><span class="ticker-dot"></span>Instagram Promotions</div>
+    <div class="ticker-item"><span class="ticker-dot"></span>Short-Form Content</div>
+    <div class="ticker-item"><span class="ticker-dot"></span>Creator Partnerships</div>
+    <div class="ticker-item"><span class="ticker-dot"></span>Talent Management</div>
+    <div class="ticker-item"><span class="ticker-dot"></span>Brand Collabs</div>
+    <div class="ticker-item"><span class="ticker-dot"></span>Sponsorship Deals</div>
+    <!-- duplicate for infinite scroll -->
+    <div class="ticker-item"><span class="ticker-dot"></span>Influencer Campaigns</div>
+    <div class="ticker-item"><span class="ticker-dot"></span>Meme Marketing</div>
+    <div class="ticker-item"><span class="ticker-dot"></span>UGC Creator Sourcing</div>
+    <div class="ticker-item"><span class="ticker-dot"></span>Instagram Promotions</div>
+    <div class="ticker-item"><span class="ticker-dot"></span>Short-Form Content</div>
+    <div class="ticker-item"><span class="ticker-dot"></span>Creator Partnerships</div>
+    <div class="ticker-item"><span class="ticker-dot"></span>Talent Management</div>
+    <div class="ticker-item"><span class="ticker-dot"></span>Brand Collabs</div>
+    <div class="ticker-item"><span class="ticker-dot"></span>Sponsorship Deals</div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-left reveal">
+        <div class="tag">Who We Are</div>
+        <h2>A Modern, Creator-First Marketing Agency</h2>
+        <p class="lead">We're not a traditional ad agency. Viralent Media is built for the creator economy — where attention lives on Instagram Reels, meme pages, and niche communities.</p>
+        <ul class="about-list">
+          <li>
+            <div class="about-icon">🎯</div>
+            <div>
+              <strong>Performance-Focused</strong>
+              Every campaign is tracked against real KPIs — reach, engagement, conversions. No vanity metrics.
+            </div>
+          </li>
+          <li>
+            <div class="about-icon">🤝</div>
+            <div>
+              <strong>Creator-Led Strategy</strong>
+              We work with creators who genuinely connect with your audience — not just those with the highest follower count.
+            </div>
+          </li>
+          <li>
+            <div class="about-icon">⚡</div>
+            <div>
+              <strong>Fast & Transparent</strong>
+              Campaigns move at internet speed. You get regular updates, clear timelines, and honest reporting.
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="about-right reveal">
+        <div class="about-visual">
+          <div class="av-label">Why brands choose Viralent</div>
+          <div class="av-metric">
+            <div class="av-metric-head"><span class="av-metric-name">Creator Authenticity Match</span><span class="av-metric-pct">94%</span></div>
+            <div class="av-bar"><div class="av-fill" style="width:94%"></div></div>
+          </div>
+          <div class="av-metric">
+            <div class="av-metric-head"><span class="av-metric-name">Campaign Delivery Rate</span><span class="av-metric-pct">97%</span></div>
+            <div class="av-bar"><div class="av-fill" style="width:97%"></div></div>
+          </div>
+          <div class="av-metric">
+            <div class="av-metric-head"><span class="av-metric-name">Client Retention Rate</span><span class="av-metric-pct">82%</span></div>
+            <div class="av-bar"><div class="av-fill" style="width:82%"></div></div>
+          </div>
+          <div class="av-metric">
+            <div class="av-metric-head"><span class="av-metric-name">Avg. Engagement Rate</span><span class="av-metric-pct">6.8%</span></div>
+            <div class="av-bar"><div class="av-fill" style="width:68%"></div></div>
+          </div>
+          <div class="av-chips">
+            <div class="av-chip">Startups</div>
+            <div class="av-chip">D2C Brands</div>
+            <div class="av-chip">Clothing</div>
+            <div class="av-chip">Apps</div>
+            <div class="av-chip">Gaming</div>
+            <div class="av-chip">Local Biz</div>
+            <div class="av-chip">Personal Brands</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="tag">What We Do</div>
+      <h2>Services Built for<br>the Creator Economy</h2>
+      <p class="lead">From meme pages to mega influencers — we manage the full spectrum of creator marketing for brands at every stage.</p>
+    </div>
+    <div class="services-grid">
+      <div class="svc-card reveal">
+        <div class="svc-icon">📣</div>
+        <h3>Influencer Marketing Campaigns</h3>
+        <p>End-to-end campaign management with vetted creators across Instagram, YouTube Shorts, and emerging platforms. We handle outreach, brief creation, content review, and publishing.</p>
+        <div class="svc-deliverables">
+          <span class="svc-tag">Creator Brief</span><span class="svc-tag">Content Review</span><span class="svc-tag">Performance Report</span>
+        </div>
+        <div class="svc-for"><strong>Best for:</strong> D2C brands, apps, clothing labels</div>
+      </div>
+      <div class="svc-card reveal">
+        <div class="svc-icon">😂</div>
+        <h3>Meme Marketing</h3>
+        <p>Culturally relevant, shareable meme content distributed across high-engagement meme pages. We craft memes that feel native — not cringe — so your brand actually goes viral.</p>
+        <div class="svc-deliverables">
+          <span class="svc-tag">Meme Concepts</span><span class="svc-tag">Page Selection</span><span class="svc-tag">Scheduling</span>
+        </div>
+        <div class="svc-for"><strong>Best for:</strong> Startups, apps, gaming brands</div>
+      </div>
+      <div class="svc-card reveal">
+        <div class="svc-icon">🤝</div>
+        <h3>Creator Partnerships</h3>
+        <p>Long-term relationship-based collaborations between brands and creators — beyond one-off posts. We negotiate, structure, and manage ongoing partnerships that build brand loyalty.</p>
+        <div class="svc-deliverables">
+          <span class="svc-tag">Deal Negotiation</span><span class="svc-tag">Contract Support</span><span class="svc-tag">Content Calendar</span>
+        </div>
+        <div class="svc-for"><strong>Best for:</strong> Established brands scaling creator programs</div>
+      </div>
+      <div class="svc-card reveal">
+        <div class="svc-icon">🎬</div>
+        <h3>UGC Creator Sourcing</h3>
+        <p>We source and manage UGC (user-generated content) creators who produce authentic product videos, unboxings, and reviews — content your brand owns and can repurpose across ads and social.</p>
+        <div class="svc-deliverables">
+          <span class="svc-tag">UGC Videos</span><span class="svc-tag">Usage Rights</span><span class="svc-tag">Ad Creatives</span>
+        </div>
+        <div class="svc-for"><strong>Best for:</strong> E-commerce, beauty, lifestyle brands</div>
+      </div>
+      <div class="svc-card reveal">
+        <div class="svc-icon">💰</div>
+        <h3>Sponsorship Management</h3>
+        <p>For creators looking to monetise — we pitch, negotiate, and manage brand sponsorship deals so creators can focus on creating. For brands, we find the right creator-brand match.</p>
+        <div class="svc-deliverables">
+          <span class="svc-tag">Brand Outreach</span><span class="svc-tag">Deal Management</span><span class="svc-tag">Invoice & Payment</span>
+        </div>
+        <div class="svc-for"><strong>Best for:</strong> Mid-tier creators (50K–500K followers)</div>
+      </div>
+      <div class="svc-card reveal">
+        <div class="svc-icon">📸</div>
+        <h3>Instagram Promotions</h3>
+        <p>Story shoutouts, Reel features, and feed collaborations across our curated Instagram network. Targeted by niche, region, and audience demographic for maximum relevance.</p>
+        <div class="svc-deliverables">
+          <span class="svc-tag">Story Shoutouts</span><span class="svc-tag">Reel Features</span><span class="svc-tag">Swipe-Up Links</span>
+        </div>
+        <div class="svc-for"><strong>Best for:</strong> Local businesses, fashion brands</div>
+      </div>
+      <div class="svc-card reveal">
+        <div class="svc-icon">⚡</div>
+        <h3>Short-Form Content Campaigns</h3>
+        <p>Reels-first campaigns built around trending audio, hooks, and formats. We brief creators to produce content that fits the algorithm — not just the brand guideline.</p>
+        <div class="svc-deliverables">
+          <span class="svc-tag">Reel Briefs</span><span class="svc-tag">Trend Research</span><span class="svc-tag">Multi-Creator Rollout</span>
+        </div>
+        <div class="svc-for"><strong>Best for:</strong> Apps, youth brands, events</div>
+      </div>
+      <div class="svc-card reveal">
+        <div class="svc-icon">🌐</div>
+        <h3>Brand Collaborations</h3>
+        <p>We broker and execute brand-x-creator co-creation projects — limited edition drops, co-branded content, and joint campaigns that generate genuine buzz.</p>
+        <div class="svc-deliverables">
+          <span class="svc-tag">Concept Development</span><span class="svc-tag">Creative Direction</span><span class="svc-tag">Launch Strategy</span>
+        </div>
+        <div class="svc-for"><strong>Best for:</strong> Clothing brands, D2C, lifestyle</div>
+      </div>
+      <div class="svc-card reveal">
+        <div class="svc-icon">🌟</div>
+        <h3>Talent Support & Deal Management</h3>
+        <p>Full-service talent support for creators — from brand deal scouting and rate negotiation to contract review and payment follow-up. We work as your behind-the-scenes team.</p>
+        <div class="svc-deliverables">
+          <span class="svc-tag">Rate Cards</span><span class="svc-tag">Brand Pitching</span><span class="svc-tag">Payment Support</span>
+        </div>
+        <div class="svc-for"><strong>Best for:</strong> Creators at 10K–500K+ followers</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="tag">How We Work</div>
+      <h2>From Brief to Results<br>in 5 Clear Steps</h2>
+      <p class="lead">No black boxes. No vague promises. This is exactly how every Viralent campaign comes to life.</p>
+    </div>
+    <div class="process-steps">
+      <div class="process-step reveal">
+        <div class="step-num">01</div>
+        <div class="step-body">
+          <h3>Discovery & Strategy</h3>
+          <p>We start with a detailed brief — understanding your brand, target audience, budget, and goals. From this, we build a tailored campaign strategy with creator personas, content formats, and expected outcomes.</p>
+          <div class="step-chips">
+            <span class="step-chip">Brand Brief</span><span class="step-chip">Audience Mapping</span><span class="step-chip">KPI Setting</span><span class="step-chip">Budget Planning</span>
+          </div>
+        </div>
+      </div>
+      <div class="process-step reveal">
+        <div class="step-num">02</div>
+        <div class="step-body">
+          <h3>Creator Sourcing & Vetting</h3>
+          <p>We shortlist creators from our network based on your specific brief. Every creator is vetted for audience authenticity, engagement quality, and niche relevance — not just follower count.</p>
+          <div class="step-chips">
+            <span class="step-chip">Creator Shortlist</span><span class="step-chip">Audience Audit</span><span class="step-chip">Brand Fit Check</span><span class="step-chip">Rate Negotiation</span>
+          </div>
+        </div>
+      </div>
+      <div class="process-step reveal">
+        <div class="step-num">03</div>
+        <div class="step-body">
+          <h3>Campaign Execution</h3>
+          <p>Creators receive detailed briefs with dos, don'ts, and creative direction. We coordinate timelines, review content before going live, and manage the full publishing schedule.</p>
+          <div class="step-chips">
+            <span class="step-chip">Creator Brief</span><span class="step-chip">Content Review</span><span class="step-chip">Scheduling</span><span class="step-chip">Go-Live Coordination</span>
+          </div>
+        </div>
+      </div>
+      <div class="process-step reveal">
+        <div class="step-num">04</div>
+        <div class="step-body">
+          <h3>Live Monitoring & Optimization</h3>
+          <p>Once live, we track performance in real time — engagement rate, reach, saves, DM spikes, link clicks, and sales. Underperforming content gets flagged and we adjust mid-campaign where possible.</p>
+          <div class="step-chips">
+            <span class="step-chip">Real-Time Tracking</span><span class="step-chip">Engagement Monitoring</span><span class="step-chip">Mid-Campaign Adjustments</span>
+          </div>
+        </div>
+      </div>
+      <div class="process-step reveal">
+        <div class="step-num">05</div>
+        <div class="step-body">
+          <h3>Reporting & Insights</h3>
+          <p>You receive a detailed campaign report — reach, impressions, engagement, creator breakdown, and key learnings. We also provide recommendations for the next campaign based on what worked.</p>
+          <div class="step-chips">
+            <span class="step-chip">Campaign Report PDF</span><span class="step-chip">Creator Performance</span><span class="step-chip">ROI Summary</span><span class="step-chip">Next Steps</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CAMPAIGNS -->
+<section id="campaigns">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="tag">Sample Campaigns</div>
+      <h2>What a Viralent Campaign<br>Looks Like</h2>
+      <p class="lead">Here are representative campaign formats we run — with realistic benchmarks you can actually expect.</p>
+    </div>
+    <div class="campaigns-grid">
+      <div class="camp-card reveal">
+        <div class="camp-header">
+          <div class="camp-brand-row">
+            <div class="camp-logo" style="background:#FFD60A;">ST</div>
+            <div class="camp-brand-info">
+              <div class="camp-brand-name">Streetkraft Co.</div>
+              <div class="camp-type">Streetwear Brand · Reel Campaign</div>
+            </div>
+          </div>
+          <div class="camp-obj">Goal: Launch new summer drop and drive traffic to website for limited-edition hoodie collection.</div>
+          <div class="camp-creators">
+            <span class="camp-ctag">Fashion Micro-Influencers</span>
+            <span class="camp-ctag">Outfit Creators</span>
+            <span class="camp-ctag">Lifestyle Pages</span>
+          </div>
+        </div>
+        <div class="camp-metrics">
+          <div class="camp-metric">
+            <div class="cm-val">2.1<span>M</span></div>
+            <div class="cm-label">Total Reach</div>
+          </div>
+          <div class="camp-metric">
+            <div class="cm-val">7.4<span>%</span></div>
+            <div class="cm-label">Avg. Engagement</div>
+          </div>
+          <div class="camp-metric">
+            <div class="cm-val">12</div>
+            <div class="cm-label">Creators Used</div>
+          </div>
+        </div>
+        <div class="camp-footer">
+          <div class="camp-outcome">Outcome: <strong>+340% website traffic</strong> during campaign window. Collection sold out in 4 days.</div>
+        </div>
+      </div>
+      <div class="camp-card reveal">
+        <div class="camp-header">
+          <div class="camp-brand-row">
+            <div class="camp-logo" style="background:#C8F135;">ZP</div>
+            <div class="camp-brand-info">
+              <div class="camp-brand-name">ZapPay App</div>
+              <div class="camp-type">Fintech App · Meme Marketing</div>
+            </div>
+          </div>
+          <div class="camp-obj">Goal: Drive 5,000+ app downloads during a 10-day launch window using meme pages and humor-led content.</div>
+          <div class="camp-creators">
+            <span class="camp-ctag">Finance Meme Pages</span>
+            <span class="camp-ctag">College Memes</span>
+            <span class="camp-ctag">Relatable Creators</span>
+          </div>
+        </div>
+        <div class="camp-metrics">
+          <div class="camp-metric">
+            <div class="cm-val">1.8<span>M</span></div>
+            <div class="cm-label">Total Impressions</div>
+          </div>
+          <div class="camp-metric">
+            <div class="cm-val">9.1<span>%</span></div>
+            <div class="cm-label">Engagement Rate</div>
+          </div>
+          <div class="camp-metric">
+            <div class="cm-val">6.2<span>K</span></div>
+            <div class="cm-label">Downloads</div>
+          </div>
+        </div>
+        <div class="camp-footer">
+          <div class="camp-outcome">Outcome: <strong>6,200 downloads in 10 days</strong> — 24% above target. Cost per install: ₹38.</div>
+        </div>
+      </div>
+      <div class="camp-card reveal">
+        <div class="camp-header">
+          <div class="camp-brand-row">
+            <div class="camp-logo" style="background:#FF6B6B;">NK</div>
+            <div class="camp-brand-info">
+              <div class="camp-brand-name">Nouriko</div>
+              <div class="camp-type">Health & Wellness Brand · UGC Campaign</div>
+            </div>
+          </div>
+          <div class="camp-obj">Goal: Collect 20 authentic UGC review videos for protein bar product to use in Meta ad creatives.</div>
+          <div class="camp-creators">
+            <span class="camp-ctag">Fitness UGC Creators</span>
+            <span class="camp-ctag">Nutrition Micro-Influencers</span>
+          </div>
+        </div>
+        <div class="camp-metrics">
+          <div class="camp-metric">
+            <div class="cm-val">24</div>
+            <div class="cm-label">UGC Videos</div>
+          </div>
+          <div class="camp-metric">
+            <div class="cm-val">4.8<span>★</span></div>
+            <div class="cm-label">Avg. Quality Score</div>
+          </div>
+          <div class="camp-metric">
+            <div class="cm-val">14</div>
+            <div class="cm-label">Days to Deliver</div>
+          </div>
+        </div>
+        <div class="camp-footer">
+          <div class="camp-outcome">Outcome: <strong>Ad creative CTR improved 2.3x</strong> using UGC vs. studio visuals in A/B test.</div>
+        </div>
+      </div>
+      <div class="camp-card reveal">
+        <div class="camp-header">
+          <div class="camp-brand-row">
+            <div class="camp-logo" style="background:#845EF7;">GM</div>
+            <div class="camp-brand-info">
+              <div class="camp-brand-name">GridMaster Gaming</div>
+              <div class="camp-type">Mobile Gaming · Creator Partnership</div>
+            </div>
+          </div>
+          <div class="camp-obj">Goal: Drive game installs and in-app purchases during a weekend tournament event using gaming creators.</div>
+          <div class="camp-creators">
+            <span class="camp-ctag">Gaming Reels Creators</span>
+            <span class="camp-ctag">Meme Pages</span>
+            <span class="camp-ctag">Gaming Communities</span>
+          </div>
+        </div>
+        <div class="camp-metrics">
+          <div class="camp-metric">
+            <div class="cm-val">3.4<span>M</span></div>
+            <div class="cm-label">Total Reach</div>
+          </div>
+          <div class="camp-metric">
+            <div class="cm-val">8.9<span>%</span></div>
+            <div class="cm-label">Engagement Rate</div>
+          </div>
+          <div class="camp-metric">
+            <div class="cm-val">18<span>K</span></div>
+            <div class="cm-label">Installs</div>
+          </div>
+        </div>
+        <div class="camp-footer">
+          <div class="camp-outcome">Outcome: <strong>18,000 installs over 3 days.</strong> In-app purchase revenue up 41% during event period.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NETWORK -->
+<section id="network">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="tag">Creator Network</div>
+      <h2>200+ Creators Across<br>Every Niche</h2>
+      <p class="lead">Our network spans meme pages, micro-influencers, UGC creators, regional voices, and niche communities — so we can reach exactly who your brand needs.</p>
+    </div>
+    <div class="network-grid">
+      <div class="net-card featured reveal">
+        <div>
+          <div class="net-emoji">📱</div>
+          <h3>Meme Pages & Viral Accounts</h3>
+          <p>High-engagement meme pages across categories — college humor, finance, relationships, gaming, fitness, and regional content. Average post reach: 50K–500K per post.</p>
+          <div class="net-stats">
+            <div><div class="nstat-val">60+</div><div class="nstat-label">Meme Pages</div></div>
+            <div><div class="nstat-val">500K+</div><div class="nstat-label">Avg. Page Following</div></div>
+            <div><div class="nstat-val">8.5%</div><div class="nstat-label">Avg. Engagement</div></div>
+          </div>
+        </div>
+        <div>
+          <div class="about-visual" style="padding:28px;">
+            <div class="av-label">Category Breakdown</div>
+            <div class="av-metric"><div class="av-metric-head"><span class="av-metric-name">Relatable / Humor</span><span class="av-metric-pct">35%</span></div><div class="av-bar"><div class="av-fill" style="width:35%"></div></div></div>
+            <div class="av-metric"><div class="av-metric-head"><span class="av-metric-name">Gaming / Tech</span><span class="av-metric-pct">22%</span></div><div class="av-bar"><div class="av-fill" style="width:22%"></div></div></div>
+            <div class="av-metric"><div class="av-metric-head"><span class="av-metric-name">Finance / Startup</span><span class="av-metric-pct">18%</span></div><div class="av-bar"><div class="av-fill" style="width:18%"></div></div></div>
+            <div class="av-metric"><div class="av-metric-head"><span class="av-metric-name">Fashion / Lifestyle</span><span class="av-metric-pct">25%</span></div><div class="av-bar"><div class="av-fill" style="width:25%"></div></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="net-card reveal">
+        <div class="net-emoji">👤</div>
+        <h3>Micro Influencers (10K–100K)</h3>
+        <p>The sweet spot for most campaigns. Micro influencers drive higher engagement and more genuine trust than mega accounts — at a fraction of the cost.</p>
+        <div class="net-stats">
+          <div><div class="nstat-val">80+</div><div class="nstat-label">Micro Creators</div></div>
+          <div><div class="nstat-val">7.2%</div><div class="nstat-label">Avg. Engagement</div></div>
+        </div>
+      </div>
+      <div class="net-card reveal">
+        <div class="net-emoji">🎥</div>
+        <h3>UGC & Content Creators</h3>
+        <p>Creators who specialise in product videos, unboxings, and lifestyle content. All UGC includes licensing rights for brand use across ads and social.</p>
+        <div class="net-stats">
+          <div><div class="nstat-val">40+</div><div class="nstat-label">UGC Creators</div></div>
+          <div><div class="nstat-val">14 days</div><div class="nstat-label">Avg. Turnaround</div></div>
+        </div>
+      </div>
+      <div class="net-card reveal">
+        <div class="net-emoji">🗺️</div>
+        <h3>Regional & Niche Creators</h3>
+        <p>Creators who speak Hindi, Tamil, Bengali, and other regional languages — perfect for targeted campaigns in specific cities or demographics.</p>
+        <div class="net-stats">
+          <div><div class="nstat-val">25+</div><div class="nstat-label">Regional Creators</div></div>
+          <div><div class="nstat-val">8</div><div class="nstat-label">Languages</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CASE STUDIES -->
+<section id="cases">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="tag">Case Studies</div>
+      <h2>Real Problems.<br>Real Strategies. Real Results.</h2>
+      <p class="lead">Three in-depth examples of how Viralent approaches challenges that brands actually face.</p>
+    </div>
+    <div class="cases-grid">
+      <div class="case-card reveal">
+        <div class="case-left">
+          <div class="case-num">01</div>
+          <div>
+            <div class="case-brand">Drip Theory</div>
+            <div class="case-niche">Streetwear · D2C · Delhi</div>
+          </div>
+        </div>
+        <div class="case-right">
+          <div class="case-cols">
+            <div class="case-col">
+              <div class="case-col-label">Problem</div>
+              <p>New streetwear brand with zero online presence and ₹30,000 marketing budget. Needed brand awareness and first sales within 3 weeks.</p>
+            </div>
+            <div class="case-col">
+              <div class="case-col-label">Strategy</div>
+              <p>10 fashion micro-influencers + 5 meme pages for "outfit of the day" content. Focused on 18–24 Delhi/NCR audience with authentic creator styles.</p>
+            </div>
+            <div class="case-col">
+              <div class="case-col-label">Execution</div>
+              <p>3-week rollout: Week 1 teaser memes, Week 2 creator unboxing Reels, Week 3 testimonial stories with discount code push.</p>
+            </div>
+          </div>
+          <div class="case-results">
+            <div class="cresult"><div class="cresult-val">1.4M</div><div class="cresult-label">Total Reach</div></div>
+            <div class="cresult"><div class="cresult-val">₹1.1L</div><div class="cresult-label">Revenue Generated</div></div>
+            <div class="cresult"><div class="cresult-val">6.9%</div><div class="cresult-label">Engagement Rate</div></div>
+            <div class="cresult"><div class="cresult-val">3.7x</div><div class="cresult-label">ROI on Budget</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="case-card reveal">
+        <div class="case-left">
+          <div class="case-num">02</div>
+          <div>
+            <div class="case-brand">StackrApp</div>
+            <div class="case-niche">Fintech SaaS · Student Focus</div>
+          </div>
+        </div>
+        <div class="case-right">
+          <div class="case-cols">
+            <div class="case-col">
+              <div class="case-col-label">Problem</div>
+              <p>Budgeting app targeting college students. Low organic discoverability. Previous Meta ads had high CPI (₹120+). Needed cost-effective installs.</p>
+            </div>
+            <div class="case-col">
+              <div class="case-col-label">Strategy</div>
+              <p>Meme marketing campaign across 8 college and personal finance meme pages. Contextual humor tied to relatable "broke student" moments.</p>
+            </div>
+            <div class="case-col">
+              <div class="case-col-label">Execution</div>
+              <p>12 meme posts + 4 creator Reels over 15 days. Memes featured subtle app integration without feeling like an ad. Stories drove link clicks.</p>
+            </div>
+          </div>
+          <div class="case-results">
+            <div class="cresult"><div class="cresult-val">4,800</div><div class="cresult-label">App Installs</div></div>
+            <div class="cresult"><div class="cresult-val">₹41</div><div class="cresult-label">Cost Per Install</div></div>
+            <div class="cresult"><div class="cresult-val">2.2M</div><div class="cresult-label">Impressions</div></div>
+            <div class="cresult"><div class="cresult-val">66%</div><div class="cresult-label">Lower CPI vs Ads</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="case-card reveal">
+        <div class="case-left">
+          <div class="case-num">03</div>
+          <div>
+            <div class="case-brand">Mara Organics</div>
+            <div class="case-niche">Skincare · D2C · Pan-India</div>
+          </div>
+        </div>
+        <div class="case-right">
+          <div class="case-cols">
+            <div class="case-col">
+              <div class="case-col-label">Problem</div>
+              <p>Organic skincare brand struggling with trust. Studio product photos weren't converting. Needed social proof and authentic product reviews at scale.</p>
+            </div>
+            <div class="case-col">
+              <div class="case-col-label">Strategy</div>
+              <p>UGC creator program: sourced 18 skincare micro-creators for authentic 30–60 second product video reviews with before/after context.</p>
+            </div>
+            <div class="case-col">
+              <div class="case-col-label">Execution</div>
+              <p>Products shipped to creators, videos collected within 10 days. Brand licensed all content for use in Meta ads, Instagram, and website. A/B tested UGC vs studio.</p>
+            </div>
+          </div>
+          <div class="case-results">
+            <div class="cresult"><div class="cresult-val">22</div><div class="cresult-label">UGC Videos</div></div>
+            <div class="cresult"><div class="cresult-val">2.8x</div><div class="cresult-label">Higher Ad CTR</div></div>
+            <div class="cresult"><div class="cresult-val">+61%</div><div class="cresult-label">Conversion Rate</div></div>
+            <div class="cresult"><div class="cresult-val">10 days</div><div class="cresult-label">Full Delivery</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="tag">Portfolio</div>
+      <h2>Campaign Concepts<br>&amp; Creative Work</h2>
+      <p class="lead">A look at the types of creative assets, formats, and campaigns we build for our partners.</p>
+    </div>
+    <div class="port-grid">
+      <div class="port-item reveal">
+        <div class="port-thumb">
+          <div class="port-thumb-bg" style="background:linear-gradient(135deg,#1a1a2e,#16213e);"></div>
+          <div class="port-thumb-content">
+            <span class="port-thumb-icon">🎬</span>
+            <div class="port-thumb-title" style="color:#C8F135;">Reel Campaign Preview</div>
+          </div>
+        </div>
+        <div class="port-meta">
+          <h4>Streetwear Drop Reel</h4>
+          <p>Creator-led outfit reveal with trending audio, product tag, and swipe-up CTA. Format optimised for 18–24 female audience.</p>
+          <div class="port-tag-row"><span class="port-tag">Instagram Reel</span><span class="port-tag">Fashion</span><span class="port-tag">Micro-Influencer</span></div>
+        </div>
+      </div>
+      <div class="port-item reveal">
+        <div class="port-thumb">
+          <div class="port-thumb-bg" style="background:linear-gradient(135deg,#0d2137,#0a3d62);"></div>
+          <div class="port-thumb-content">
+            <span class="port-thumb-icon">😂</span>
+            <div class="port-thumb-title" style="color:#FFD700;">Meme Post Concept</div>
+          </div>
+        </div>
+        <div class="port-meta">
+          <h4>Finance App Meme Series</h4>
+          <p>"Broke college student discovers budgeting" format — 4-panel meme designed to feel organic while softly promoting the app.</p>
+          <div class="port-tag-row"><span class="port-tag">Meme Marketing</span><span class="port-tag">Fintech</span><span class="port-tag">College Audience</span></div>
+        </div>
+      </div>
+      <div class="port-item reveal">
+        <div class="port-thumb">
+          <div class="port-thumb-bg" style="background:linear-gradient(135deg,#1a0533,#3d0066);"></div>
+          <div class="port-thumb-content">
+            <span class="port-thumb-icon">📊</span>
+            <div class="port-thumb-title" style="color:#E040FB;">Analytics Dashboard</div>
+          </div>
+        </div>
+        <div class="port-meta">
+          <h4>Campaign Report Sample</h4>
+          <p>End-of-campaign analytics report showing reach breakdown, creator performance, engagement by post, and ROI summary.</p>
+          <div class="port-tag-row"><span class="port-tag">Reporting</span><span class="port-tag">Analytics</span><span class="port-tag">All Campaigns</span></div>
+        </div>
+      </div>
+      <div class="port-item reveal">
+        <div class="port-thumb">
+          <div class="port-thumb-bg" style="background:linear-gradient(135deg,#0d3321,#0a5c39);"></div>
+          <div class="port-thumb-content">
+            <span class="port-thumb-icon">🌿</span>
+            <div class="port-thumb-title" style="color:#69F0AE;">UGC Creator Video</div>
+          </div>
+        </div>
+        <div class="port-meta">
+          <h4>Skincare UGC Review</h4>
+          <p>Authentic 45-second creator review video with before/after context, natural lighting, and genuine product experience — licensed for brand use.</p>
+          <div class="port-tag-row"><span class="port-tag">UGC Video</span><span class="port-tag">Skincare</span><span class="port-tag">Ad-Ready</span></div>
+        </div>
+      </div>
+      <div class="port-item reveal">
+        <div class="port-thumb">
+          <div class="port-thumb-bg" style="background:linear-gradient(135deg,#1a1000,#3d2b00);"></div>
+          <div class="port-thumb-content">
+            <span class="port-thumb-icon">📸</span>
+            <div class="port-thumb-title" style="color:#FFD60A;">Instagram Story Promo</div>
+          </div>
+        </div>
+        <div class="port-meta">
+          <h4>Brand Story Shoutout</h4>
+          <p>Swipe-up story with strong visual hook, offer highlight, and urgency element. Posted across 5 creators simultaneously for max impact.</p>
+          <div class="port-tag-row"><span class="port-tag">Story Promo</span><span class="port-tag">D2C Brand</span><span class="port-tag">Offer-Led</span></div>
+        </div>
+      </div>
+      <div class="port-item reveal">
+        <div class="port-thumb">
+          <div class="port-thumb-bg" style="background:linear-gradient(135deg,#1a0a1a,#3d1a3d);"></div>
+          <div class="port-thumb-content">
+            <span class="port-thumb-icon">🤝</span>
+            <div class="port-thumb-title" style="color:#EA80FC;">Collab Announcement</div>
+          </div>
+        </div>
+        <div class="port-meta">
+          <h4>Creator × Brand Collab Post</h4>
+          <p>Co-branded collab reel for a gaming peripheral drop — creator's signature style + brand identity fused for a launch that felt creator-native.</p>
+          <div class="port-tag-row"><span class="port-tag">Collab Post</span><span class="port-tag">Gaming</span><span class="port-tag">Launch Campaign</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="tag">Testimonials</div>
+      <h2>What Our Partners Say</h2>
+      <p class="lead">Honest feedback from the founders and creators we've worked with.</p>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card reveal">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-quote">"We had a tiny budget and zero clarity on influencer marketing. Viralent put together a plan that actually made sense for our stage. The meme campaign for our app launch genuinely surprised us — the cost per install was under ₹45."</p>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background:#C8F135;">RK</div>
+          <div>
+            <div class="testi-name">Rohan Kapoor</div>
+            <div class="testi-role">Co-founder, StackrApp · Fintech Startup</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card reveal">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-quote">"I had been trying to land brand deals for months with zero luck. Within 3 weeks of working with Viralent, I had my first paid campaign with a skincare brand. They handle all the back-and-forth — I just focus on creating."</p>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background:#FF6B6B;">PR</div>
+          <div>
+            <div class="testi-name">Priya Rao</div>
+            <div class="testi-role">Lifestyle Creator · 78K Followers</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card reveal">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-quote">"Our summer drop sold out faster than expected. The influencer brief they created for creators was so detailed and well thought out — the content actually reflected our brand, not just a generic product tag."</p>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background:#845EF7;">AM</div>
+          <div>
+            <div class="testi-name">Aarav Mehta</div>
+            <div class="testi-role">Founder, Drip Theory · Streetwear Brand</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card reveal">
+        <div class="testi-stars">★★★★☆</div>
+        <p class="testi-quote">"The UGC videos Viralent delivered changed how our ads performed. We went from 0.8% CTR on studio content to 2.1% CTR on UGC in the first week. These are real results, not inflated numbers."</p>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background:#FFD60A;">SJ</div>
+          <div>
+            <div class="testi-name">Sneha Joshi</div>
+            <div class="testi-role">Marketing Head, Mara Organics</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card reveal">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-quote">"Very responsive team. They understood our gaming audience without us having to explain too much. The creator selection was spot-on — our game got featured by creators who genuinely play mobile games."</p>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background:#40C057;">VN</div>
+          <div>
+            <div class="testi-name">Vikram Nair</div>
+            <div class="testi-role">Growth Lead, GridMaster Gaming</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card reveal">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-quote">"As a small clothing brand in Mumbai, we couldn't afford big influencers. Viralent found micro creators who matched our aesthetic perfectly. The ROI on ₹25K spend was honestly shocking — in a good way."</p>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background:#FA5252;">KS</div>
+          <div>
+            <div class="testi-name">Kavya Shah</div>
+            <div class="testi-role">Founder, Knotline · Fashion Brand</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="tag">Pricing</div>
+      <h2>Transparent, Realistic<br>Packages for Indian Brands</h2>
+      <p class="lead">No hidden fees, no lock-ins. Start with what suits your budget and scale up as you grow. All prices are starting points — final pricing depends on scope.</p>
+    </div>
+    <div class="pricing-grid">
+      <div class="price-card reveal">
+        <div class="price-tag-label">Starter</div>
+        <div class="price-name">Meme Blast</div>
+        <div class="price-amount">₹8,000 <span>/ campaign</span></div>
+        <div class="price-desc">Perfect for startups and apps wanting fast, cost-effective awareness via meme marketing.</div>
+        <ul class="price-features">
+          <li>5 meme page promotions</li>
+          <li>Custom meme content creation (2 designs)</li>
+          <li>Page selection based on your niche</li>
+          <li>48–72 hour turnaround</li>
+          <li>Basic reach & engagement report</li>
+          <li>1 revision on meme designs</li>
+        </ul>
+        <a href="https://wa.me/918920277947" class="price-cta price-cta-outline" target="_blank">Get Started →</a>
+      </div>
+      <div class="price-card featured reveal">
+        <div class="price-tag-label featured-label">Most Popular <span class="price-badge">BEST VALUE</span></div>
+        <div class="price-name">Influencer Launch</div>
+        <div class="price-amount">₹22,000 <span>/ campaign</span></div>
+        <div class="price-desc">Full-service influencer campaign for brands looking to drive real conversions with creator content.</div>
+        <ul class="price-features">
+          <li>5 micro-influencers (10K–80K followers)</li>
+          <li>Custom campaign brief & content direction</li>
+          <li>Creator shortlist with your approval</li>
+          <li>Content review before publishing</li>
+          <li>Instagram Reels or Stories format</li>
+          <li>Full analytics report post-campaign</li>
+          <li>2 rounds of revision on briefs</li>
+          <li>Dedicated WhatsApp campaign manager</li>
+        </ul>
+        <a href="https://wa.me/918920277947" class="price-cta price-cta-solid" target="_blank">Start This Campaign →</a>
+      </div>
+      <div class="price-card reveal">
+        <div class="price-tag-label">Growth</div>
+        <div class="price-name">UGC Bundle</div>
+        <div class="price-amount">₹18,000 <span>/ bundle</span></div>
+        <div class="price-desc">For brands who need authentic video content for their ads, website, or social channels.</div>
+        <ul class="price-features">
+          <li>8 UGC creator videos (30–60 seconds)</li>
+          <li>Full usage rights — yours to keep forever</li>
+          <li>Horizontal + vertical formats</li>
+          <li>Creator selection aligned to your brand</li>
+          <li>Product review or lifestyle format</li>
+          <li>Delivered within 14 days</li>
+          <li>Ad-ready with CTAs on request</li>
+        </ul>
+        <a href="https://wa.me/918920277947" class="price-cta price-cta-outline" target="_blank">Get Started →</a>
+      </div>
+    </div>
+    <p style="text-align:center;margin-top:32px;font-size:13.5px;color:var(--muted2);">Need a custom quote? We work with budgets as low as ₹5,000 and campaigns at any scale. <a href="https://wa.me/918920277947" style="color:var(--accent);text-decoration:none;">WhatsApp us →</a></p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="tag">FAQ</div>
+      <h2>Questions We Get<br>All the Time</h2>
+    </div>
+    <div class="faq-grid">
+      <div class="faq-item reveal">
+        <div class="faq-q">How long does a campaign take to go live?</div>
+        <div class="faq-a">Meme campaigns can go live in 48–72 hours. Influencer campaigns typically take 5–10 days from briefing to the first post going live, depending on creator availability and content review time.</div>
+      </div>
+      <div class="faq-item reveal">
+        <div class="faq-q">Do I need to pay upfront?</div>
+        <div class="faq-a">Yes, we require 50–100% advance depending on the package. This covers creator fees and platform costs. For larger campaigns, we can discuss a 50% upfront / 50% on-delivery structure.</div>
+      </div>
+      <div class="faq-item reveal">
+        <div class="faq-q">Can I choose which creators work on my campaign?</div>
+        <div class="faq-a">Absolutely. We share a shortlist of 2–3x the required creators and let you approve who's selected. We guide you on who we think is the best fit, but the final call is always yours.</div>
+      </div>
+      <div class="faq-item reveal">
+        <div class="faq-q">What if I'm not happy with the content?</div>
+        <div class="faq-a">All content is reviewed by us before publishing. If it doesn't match the brief, we send it back to the creator for revision. Every package includes at least 1–2 rounds of revisions.</div>
+      </div>
+      <div class="faq-item reveal">
+        <div class="faq-q">How do you report results?</div>
+        <div class="faq-a">You receive a PDF campaign report with screenshots and metrics including total reach, impressions, engagement rate, story views, link clicks, and a per-creator breakdown.</div>
+      </div>
+      <div class="faq-item reveal">
+        <div class="faq-q">Do you work with very small brands or new startups?</div>
+        <div class="faq-a">Yes — in fact, early-stage brands are some of our favourite clients. We can build campaigns starting from ₹5,000–8,000 and scale from there as you grow and see results.</div>
+      </div>
+      <div class="faq-item reveal">
+        <div class="faq-q">What niches do you specialise in?</div>
+        <div class="faq-a">Fashion, D2C, fintech apps, gaming, health & wellness, food, personal brands, and local businesses. If your category isn't listed, just ask — our creator network is broad.</div>
+      </div>
+      <div class="faq-item reveal">
+        <div class="faq-q">Can you manage creator sponsorships if I'm an influencer?</div>
+        <div class="faq-a">Yes. We work with creators across 10K–500K+ followers to source, pitch, negotiate, and close brand deals — and handle follow-ups and payments. Reach out via WhatsApp to discuss.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container" style="position:relative;z-index:1;">
+    <div class="contact-grid">
+      <div class="contact-left reveal">
+        <div class="tag">Get In Touch</div>
+        <h2>Let's Build Something<br>That Actually Works.</h2>
+        <p class="lead">Whether you're a brand, a startup, or a creator — we'd love to understand your goals and see if we can help.</p>
+        <div class="contact-methods">
+          <a href="mailto:Contact.viralentmedia@gmail.com" class="contact-method">
+            <div class="cmethod-icon">✉️</div>
+            <div>
+              <div class="cmethod-label">Email Us</div>
+              <div class="cmethod-val">Contact.viralentmedia@gmail.com</div>
+            </div>
+          </a>
+          <a href="https://wa.me/918920277947" class="contact-method" target="_blank">
+            <div class="cmethod-icon">💬</div>
+            <div>
+              <div class="cmethod-label">WhatsApp</div>
+              <div class="cmethod-val">+91 89202 77947</div>
+            </div>
+          </a>
+          <a href="https://instagram.com/viralentmedia" class="contact-method" target="_blank">
+            <div class="cmethod-icon">📸</div>
+            <div>
+              <div class="cmethod-label">Instagram</div>
+              <div class="cmethod-val">@viralentmedia</div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="contact-right reveal">
+        <div class="contact-form">
+          <div class="form-row">
+            <div class="form-field">
+              <label>Your Name</label>
+              <input type="text" placeholder="Rahul Sharma">
+            </div>
+            <div class="form-field">
+              <label>Brand / Company</label>
+              <input type="text" placeholder="Streetkraft Co.">
+            </div>
+          </div>
+          <div class="form-field">
+            <label>Email Address</label>
+            <input type="email" placeholder="you@yourbrand.com">
+          </div>
+          <div class="form-field">
+            <label>What are you looking for?</label>
+            <select>
+              <option value="" disabled selected>Select a service</option>
+              <option>Influencer Marketing Campaign</option>
+              <option>Meme Marketing</option>
+              <option>UGC Creator Videos</option>
+              <option>Creator Partnership</option>
+              <option>Sponsorship Management (Creators)</option>
+              <option>Instagram Promotions</option>
+              <option>Custom / Not Sure Yet</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label>Budget Range</label>
+            <select>
+              <option value="" disabled selected>Select your budget</option>
+              <option>Under ₹10,000</option>
+              <option>₹10,000 – ₹25,000</option>
+              <option>₹25,000 – ₹50,000</option>
+              <option>₹50,000 – ₹1,00,000</option>
+              <option>₹1,00,000+</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label>Tell us about your brand or goal</label>
+            <textarea placeholder="E.g. We're launching a new clothing line next month and want to reach 18–24 audience in Delhi via Instagram. Budget is around ₹20,000..."></textarea>
+          </div>
+          <button class="form-submit" onclick="this.textContent='Message Sent! We\'ll WhatsApp you shortly ✓'">Send Message →</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo">Viralent<span>.</span></div>
+        <div class="footer-tagline">Creator Partnerships. Meme Marketing. Viral Reach. We help brands grow through the creator economy.</div>
+        <div class="footer-socials">
+          <a href="https://instagram.com/viralentmedia" class="social-btn" target="_blank">📸</a>
+          <a href="https://wa.me/918920277947" class="social-btn" target="_blank">💬</a>
+          <a href="mailto:Contact.viralentmedia@gmail.com" class="social-btn">✉️</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Services</div>
+        <ul>
+          <li><a href="#services">Influencer Campaigns</a></li>
+          <li><a href="#services">Meme Marketing</a></li>
+          <li><a href="#services">UGC Creator Sourcing</a></li>
+          <li><a href="#services">Creator Partnerships</a></li>
+          <li><a href="#services">Sponsorship Management</a></li>
+          <li><a href="#services">Instagram Promotions</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Company</div>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#campaigns">Our Work</a></li>
+          <li><a href="#cases">Case Studies</a></li>
+          <li><a href="#network">Creator Network</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Contact</div>
+        <ul>
+          <li><a href="mailto:Contact.viralentmedia@gmail.com">Contact.viralentmedia@gmail.com</a></li>
+          <li><a href="https://wa.me/918920277947">WhatsApp: 8920277947</a></li>
+          <li><a href="https://instagram.com/viralentmedia">@viralentmedia</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© 2025 Viralent Media. All rights reserved.</div>
+      <div style="color:var(--muted2);">Scaling Brands Through Creators & Culture</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Scroll reveal
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, i) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => { entry.target.classList.add('visible'); }, i * 60);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+  // Animate bars on reveal
+  const barObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.querySelectorAll('.hcard-fill, .av-fill').forEach(bar => {
+          const w = bar.style.width;
+          bar.style.width = '0';
+          setTimeout(() => { bar.style.width = w; }, 300);
+        });
+        barObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.3 });
+  document.querySelectorAll('.hero-card, .about-visual').forEach(el => barObserver.observe(el));
+</script>
+</body>
+</html>
